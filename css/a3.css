@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body{
+	display: block;
+	margin: 0;
+}
+
+#header {
+	height: 80px;
+	width: auto;
+	color: #ccc;
+    position: fixed;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
+}
+
+.menu{
+	font-family: '標楷體';
+	font: 20px;
+}
+
+.menu > li{
+	float: left;
+}
+
+.menu li{
+	position: relative;
+	padding: 0px;
+	border: lightblue 1px dashed;
+	min-width: 140px;
+	background-color:#afeeee;
+}
+
+.menu ul{
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	display: none;
+}
+
+.menu ul li > ul{
+	z-index: 30;
+	top: 2%;
+	left: 98%;
+}
+
+.menu a{
+	display: block;
+	padding: 5px 20px;
+	text-decoration: none;
+    background-image: url(../img/btn1.png);
+    background-size: cover;
+    color: black;
+}
+
+.menu a:hover{
+	background-image: url(../img/btn2.png);
+	background-size: cover;
+	color: white;
+}
+
+.menu li:hover > ul{
+	display: block;
+}
+
+section{
+	background-color:#E0FFFF ;
+	padding: 30px 30px;
+	box-sizing: border-box;
+}
+
+section p{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	
+}
+
+.container{
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imgfl{
+	float: left;
+    margin-right: 20px;
+}
+
+.clear{
+	clear: both;
+}
+
+section + section{
+	margin-top: 50px;
+}
+
+h2{
+	font-family: '標楷體';
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 1px solid #ADD8E6;
+	color: #B0C4DE;
+}
+
+h4,p{
+	font-family: '標楷體';
+	font-size: 20px;
+}
+
+#pagetop{
+margin:0;
+margin-left: 550px;
+position: fixed;
+left: 50%;
+bottom: 0;
+}
+
+#pagetop a{
+display:inline-block;
+padding:10px;
+background: #000;
+color: #fff;
+text-decoration: none;
+}
